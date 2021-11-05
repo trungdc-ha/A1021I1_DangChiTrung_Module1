@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*#btnReset{*/
+        /*    background-color: gold;*/
+        /*}*/
+
+        .btn {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <form name="formLogin" action="https://www.google.com/" method="post">
+        <label for="txtUserName">UserName</label>
+        <input type="text" placeholder="username" id="txtUserName" name="username">
+        </br>
+        <label for="txtPass">Password</label>
+        <input type="password" placeholder="password" id="txtPass" name="pass">
+
+        </br>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> LGBT
+        </br>
+
+        <input type="checkbox" name="languages"> JAVA
+        <input type="checkbox" name="languages"> C#
+        <input type="checkbox" name="languages"> PHP
+        <input type="checkbox" name="languages"> HTML
+        </br>
+
+        <select>
+            <option>Ha Noi</option>
+            <option>Hai Phong</option>
+            <option>Da Nang</option>
+        </select>
+        </br>
+        <input type="submit" value="submit" style="color: red" class="btn"/>
+<!--        <input type="reset" value="Reset" style="background-color: green" class="btn"/>-->
+        <input type="reset" value="Reset" class="btn"/>
+<!--        <input type="reset" value="Reset" id="btnReset"/>-->
+<!--        ctrl + /-->
+    </form>
+</body>
+</html>
