@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    document.write(a + "<br>");
+    document.write(b + "<br>");
+    let c;
+    // let c = a + b;
+    // //--
+    // let d = c + b;
+    // let e = d + c;
+
+    for(let i = 1; i<=18; i++){
+        c = a + b;
+        a = b;
+        b = c;
+        document.write(c + "<br>")
+    }
+</script>
+</body>
+</html>
