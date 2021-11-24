@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [8,6,7,2];
+    let array1 = [9,11];
+
+    //Gop nhieu mang
+    array = array.concat(array1);
+
+    //them phan tu vao cuoi mang
+    // array.push(11);
+    // array[array.length] = 12;
+
+    //them phan tu vao dau mang
+     array.unshift(55);
+
+    //Xoa phan tu o cuoi
+    // array.pop()
+
+    //Xoa phan tu o dau mang
+    //array.shift();
+
+    //Chuyen mang thanh chuoi
+    // let str = array.join("*");
+    // let str = array.toString()
+    // document.write(str);
+
+    //ham dao mang
+    // document.write(array.reverse());
+
+    //Ham xoa tai vi tri index bat ki
+    array.splice(1,2); //xóa từ index 1 đi 2 phần tử
+
+    //Chèn tại vị trí index bất kì
+    array.splice(1,0,11); //chèn tại index 1 số 11
+    // array.splice(1,0,11,12,13); //từ index 1 chèn 3 số liên tiếp 11,12,13
+
+    //Hàm sắp xếp
+    // array.sort(function (a, b){
+    //     // return a - b; //sắp xếp tăng
+    //     return b - a; //sắp xếp giảm
+    // })
+
+    document.write(array); //chi dung de xem noi dung cua mang
+    // for(let value of array){
+    //     document.write(value);
+    // }
+
+</script>
+</body>
+</html>
