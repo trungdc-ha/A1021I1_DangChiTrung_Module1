@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [1,"a",true];
+    // arr[0] = 9;
+    // document.write(arr[0]); //9
+
+
+    let array2d = [
+        [1,2,3,4], //0
+        [7,8,9,10,15,16,17], //1
+        [11,12,13,14] //2
+    ];
+    // let array2d = [[1,2,3,4],[5,6,7,8],[9,10,11,12]];
+    // document.write(array2d[2][1]) //12
+    // document.write(array2d[0][0]) //1
+    // document.write(array2d[2][2]) //13
+    // array2d[1][2] = 99;
+
+    for(let row = 0; row < array2d.length; row++){
+        for(let col = 0; col < array2d[row].length; col++){
+            document.write(array2d[row][col] + " ");
+        }
+        document.write("<br>")
+    }
+</script>
+</body>
+</html>

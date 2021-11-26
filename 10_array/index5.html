@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = new Array(10);
+    for(let index = 0; index <  array.length; index++){
+        let number = parseInt(prompt("moi ban nhap so nguyen tai index = " + index));
+        array[index] = number;
+    }
+
+    //Mang truoc khi xoa V
+    for(let value of array){
+        document.write(value + " ");
+    }
+
+
+    let v = parseInt(prompt("moi ban nhap so nguyen V "));
+
+    //tim v co ton tai trong array hay khong, neu co tra vi vị trí của V
+    // let indexV = -1;
+    // for(let index = 0; index < array.length; index++){
+    //     if(array[index] == v){
+    //         indexV = index;
+    //     }
+    // }
+    let indexV = array.indexOf(v);
+
+    if(indexV == -1){
+        alert(v + " khong co trong mang array.");
+    } else {
+        //xoa v khoi mang
+        // for(let index = indexV; index < array.length - 1; index++){
+        //     array[index] = array[index + 1];
+        // }
+        // array[array.length-1] = 0;
+        array.splice(indexV,1);
+        array.push(0);
+    }
+
+    //Mang sau khi xoa V
+    document.write("<br>");
+    // for(let value of array){
+    //     document.write(value + " ");
+    // }
+    document.write(array.join("-"));
+
+</script>
+</body>
+</html>
