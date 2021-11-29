@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*Hàm không có trả về*/
+    function sum() {
+        let a = parseInt(prompt("input a"));
+        let b = parseInt(prompt("input b"));
+        let sum = a + b;
+        alert(sum);
+        // return sum;
+    }
+
+    /*Hàm có trả về*/
+    function increase(x) {
+        document.write(++x);
+        return x; //9
+        // document.write("Da return");
+    }
+
+    let result = sum();
+    // let result = increase(8);
+    console.log(result);
+
+</script>
+</body>
+</html>
