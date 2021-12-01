@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function changeValue(funcNum){
+        console.log("1: " + funcNum[0])
+        funcNum[0] = 9;
+        console.log("2: " + funcNum[0])
+        // return funcNum;
+    }
+
+    let myNum = [25];
+    /*Pass by reference - truyen tham chieu*/
+    changeValue(myNum);
+    console.log(myNum); //9
+</script>
+</body>
+</html>

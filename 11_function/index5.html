@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function changeValue(funcNum){
+        console.log("1: " + funcNum)
+        funcNum = 9;
+        console.log("2: " + funcNum)
+        // return funcNum;
+    }
+
+    let myNum = 2;
+    /*Pass by value - truyen tham tri*/
+    changeValue(myNum); //copy gias tri cua
+    // bien myNum roi truyen vao ham
+    console.log("Result: " + myNum);//2
+
+</script>
+</body>
+</html>

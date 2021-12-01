@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let starts = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let constellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
+
+        // Tiếp theo, tạo một hàm nhận vào một tham số dạng chuỗi duy nhất.
+        // Trong hàm này, duyệt qua mảng thứ nhất để tìm tên ngôi sao.
+        // Nếu tìm thấy, trả lại giá trị tương ứng với chỉ số đó ở mảng thứ hai.
+        // Nói cách khác, trả lại tên chòm sao của ngôi sao đó.
+
+        function findConstellation(start){
+            // let check = false;
+            // let index;
+            let result = "Không tìm thấy ngôi sao: " + start;
+            for(let i = 0; i< starts.length; i++){
+                if(starts[i] == start){
+                    // check = true;
+                    // index = i;
+                    // return constellation[i];
+                    result = constellation[i];
+                    break;
+                }
+            }
+            alert(result);
+            // return 0;
+            // if(check){
+            //     alert(constellation[index]);
+            // } else {
+            //     alert("Không tìm thấy ngôi sao: " + start);
+            // }
+        }
+
+        let input = prompt("Nhap ten ngoi sao");
+        findConstellation(input);
+    </script>
+</body>
+</html>
