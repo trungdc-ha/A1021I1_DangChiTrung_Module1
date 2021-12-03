@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class ConNguoi {
+            constructor(ten, diaChi) {
+                this.ten = ten;
+                this.diaChi = diaChi;
+            }
+
+            diAnSang(){
+                document.write("Ban " + this.ten + " di an sáng. <br>")
+            }
+
+            //setter
+            setNamSinh(namSinh){
+                this.namSinh = namSinh;
+            }
+
+            setTen(tenMoi){
+                this.ten = tenMoi;
+            }
+
+            //getter
+            getNamSinh(){
+                return this.namSinh;
+            }
+
+            getTen(){
+                return this.ten;
+            }
+        }
+
+        let conNguoi_1 = new ConNguoi("Hòa", "Đà Nẵng");
+        let conNguoi_2 = new ConNguoi("Hùng", "Hồ Chí Minh");
+
+        conNguoi_1.setTen("Ly");
+        conNguoi_1.diAnSang();
+        conNguoi_1.setNamSinh(1990);
+        document.write(conNguoi_1.namSinh);
+        document.write(conNguoi_1.getTen());
+        // conNguoi_1.diAnSang();
+        // conNguoi_2.diAnSang();
+        //
+        // document.write(conNguoi_2.diaChi)
+    </script>
+</body>
+</html>

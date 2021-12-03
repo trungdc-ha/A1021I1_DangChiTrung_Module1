@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function ConNguoi(ten, diaChi) {
+        var ten = ten;
+        var diaChi = diaChi;
+
+        this.diAnSang = function () {
+            document.write("Ban " + ten + " di an sáng. <br>")
+        }
+    }
+
+    let conNguoi_1 = new ConNguoi("Hải", "Đà Nẵng");
+    conNguoi_1.diAnSang();
+</script>
+</body>
+</html>

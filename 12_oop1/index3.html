@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let iphone11 = {
+        ten: "iphone 11",
+        hangSX: "apple",
+        namSx: 2021,
+        gia: 200,
+
+        hienThi:
+            function () {
+                document.write(this.ten + " - " + this.hangSX + "<br>")
+            }
+    }
+
+    let samsungs22 = {
+        ten: "samsungs22",
+        hangSX: "SamSung",
+
+        hienThi:
+            function () {
+                document.write(this.ten + " - " + this.hangSX)
+            }
+    }
+
+    iphone11.ten = "Iphone Pro Max"
+    iphone11.hienThi();
+    samsungs22.hienThi();
+</script>
+</body>
+</html>
