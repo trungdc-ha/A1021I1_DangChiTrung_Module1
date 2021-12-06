@@ -22,7 +22,12 @@
             }
 
             setTen(tenMoi){
-                this.ten = tenMoi;
+                if(tenMoi == "admin"){
+                    console.log("ten ko duoc chap nhan")
+                } else {
+                    this.ten = tenMoi;
+                }
+
             }
 
             //getter
@@ -38,6 +43,7 @@
         let conNguoi_1 = new ConNguoi("Hòa", "Đà Nẵng");
         let conNguoi_2 = new ConNguoi("Hùng", "Hồ Chí Minh");
 
+        conNguoi_1.ten = "Ly";
         conNguoi_1.setTen("Ly");
         conNguoi_1.diAnSang();
         conNguoi_1.setNamSinh(1990);

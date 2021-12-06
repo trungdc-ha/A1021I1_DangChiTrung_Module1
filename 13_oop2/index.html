@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Bird {
+        constructor(weight) {
+            this.weight = weight;
+        }
+
+        getWeight(){
+            return this.weight;
+        }
+    }
+
+
+    class Animal {
+        constructor(name, age, weight) {
+            this.name = name;
+            this.age = age;
+            this.weight = weight;
+        }
+
+        sayName(){
+            console.log("Animal name: " + this.name);
+        }
+
+        getName(){
+            return this.name;
+        }
+
+        setName(newName){
+            this.name = newName;
+        }
+    }
+
+    class Dog extends Animal {
+        run(){
+            console.log("Dog run...!");
+        }
+
+        sayName(){
+            console.log("Dog name: " + this.name);
+        }
+
+        eat(bird){
+            if(bird.weight > 0){
+                bird.weight--;
+                this.weight++;
+            } else {
+                console.log("Dog: het do an roi cô chủ ơi!")
+            }
+        }
+    }
+
+    class Cat extends Animal {
+        sayName(){
+            console.log("Cat name: " + this.name);
+        }
+
+        eat(bird){ //bird là một object
+            if(bird.weight > 0){
+                bird.weight--;
+                this.weight++;
+            } else {
+                console.log("Cat: het do an roi cô chủ ơi!")
+            }
+        }
+    }
+
+    let myDog = new Dog("Tom",1, 5);
+    let myCat = new Cat("Jerry", 1, 1);
+    let bird = new Bird(3);
+
+    myDog.eat(bird);
+    myDog.eat(bird);
+    myCat.eat(bird);
+    console.log("Dog weight: " + myDog.weight);
+    console.log("Bird weight: " + bird.weight);
+    console.log("Cat weight: " + myCat.weight);
+
+</script>
+</body>
+
+</html>
