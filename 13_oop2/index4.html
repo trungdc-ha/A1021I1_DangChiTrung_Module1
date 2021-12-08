@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Mobile {
+        constructor(battery, draft, inbox, outbox, status) {
+            this.battery = battery;
+            this.draft = draft;
+            this.inbox = inbox;
+            this.outbox = outbox;
+            this.status = status;
+        }
+
+        checkStatus(){
+            if(this.status) {
+                document.write("The mobile is ON");
+            } else {
+                document.write("The mobile is OFF");
+            }
+            this.battery--;
+        }
+
+        turnOn(){
+            this.status = true;
+            this.battery--;
+        }
+
+        turnOff(){
+            this.status = false;
+            this.battery--;
+        }
+
+        setBattery(battery){
+            this.battery = battery;
+        }
+
+        setMessageDraft(message){
+            if(this.status){
+                this.draft = message;
+                this.battery--;
+            } else {
+                document.write("The mobile is OFF")
+            }
+        }
+
+        receiveMessages(message){
+            if(this.status){
+              this.inbox = message;
+              this.battery--;
+            } else {
+                document.write("The mobile is OFF")
+            }
+        }
+
+        sendMessage(mobile){
+            if(this.status){
+                this.outbox.push(this.draft);
+                mobile.receiveMessages(this.draft);
+                // mobile.inbox = this.draft;
+                this.draft = "";
+                this.battery--;
+            } else {
+                document.write("The mobile is OFF")
+            }
+        }
+    }
+</script>
+</body>
+</html>

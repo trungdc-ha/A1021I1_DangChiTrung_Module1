@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(celsius) {
+            this.celsius = celsius;
+        }
+
+        cToF(){
+            return 1.8*this.celsius + 32;
+        }
+
+        cToK(){
+            return this.celsius + 273.15;
+        }
+    }
+    let c = new Temperature(25);
+    document.write("C to F:" + c.cToF());
+    document.write("<br>")
+    document.write("C to K:" + c.cToK());
+</script>
+</body>
+</html>
